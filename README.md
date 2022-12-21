@@ -58,8 +58,10 @@ Service Monitoring | actuator
 2. Open the command line in the source code folder
 3. Build project
    `$ mvn package`
- 4. Run the tests
+ 4. Run the test cases
     `$ mvn test`
+5.  Go inside target folder
+    `$ cd target`
 5. Run the project
    `$ java -jar receipe-service-0.0.1-SNAPSHOT.jar`
 6. Open the swagger-ui with the link below
