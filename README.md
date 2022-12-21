@@ -66,7 +66,8 @@ Service Monitoring | actuator
    `$ java -jar receipe-service-0.0.1-SNAPSHOT.jar`
 6. Open the swagger-ui with the link below
 `http://localhost:9080/recipe-service/swagger-ui.html#/`
-
+7. Actuator end point
+`http://localhost:9090/recipe-service/management`
 
 
 
