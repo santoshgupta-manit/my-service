@@ -73,11 +73,11 @@ class RecipeControllerTest {
 		
 		RecipeResponse recipeResponse = getFromMvcResult(mvcResult, RecipeResponse.class);
 		UpdateRecipeRequest updateRecipeRequest =TestDataBuilder.buildUpdateRecipeRequest();
-		updateRecipeRequest.setId(recipeResponse.getId());
 		
+		updateRecipeRequest.setId(recipeResponse.getId());
 		mockMvc.perform(patch("/v1/recipe").accept(MediaType.APPLICATION_JSON)
 				.contentType(MediaType.APPLICATION_JSON)
-				.content(objectMapper.writeValueAsString(TestDataBuilder.buildUpdateRecipeRequest())))
+				.content(objectMapper.writeValueAsString(updateRecipeRequest)))
 				.andExpect(status().is(200)).andReturn();
 	}
 	
