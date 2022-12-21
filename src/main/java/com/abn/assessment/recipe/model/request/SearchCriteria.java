@@ -17,7 +17,7 @@ import lombok.ToString;
 @ToString
 public class SearchCriteria {
 	@NotNull(message = "{api.recipe.filterSearch.filterKey.notBlank}")
-	@OneOf(message = "{api.recipe.filterSearch.filterKey.invalid}", value = { "name", "numberOfServings", "type",
+	@OneOf(message = "{api.recipe.filterSearch.filterKey.invalid}", value = { "name", "numberofservings", "type",
 			"instructions", "ingredients" })
 	@ApiModelProperty(example = "name", required = true)
 	private String filterKey;
